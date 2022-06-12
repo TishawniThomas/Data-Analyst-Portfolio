@@ -1,0 +1,39 @@
+/** Cosmetic_store:
+Pink lipgloss (4, 2, 1)
+Red lipgloss (4, 2, 2)
+Clear lipgloss (10, 4, 4)
+Black lipgloss (2, 2, 2)
+Strawberry lipgloss (2, 5, 1)
+Pina colada lipgloss (4, 2, 1)
+Coffee lipgloss (4, 2, 1)
+Sweet breeze lipgloss (4, 2, 1)
+Strawberry glaze lipgloss (4, 2, 1)
+Coco lipgloss (4, 2, 1)
+Icy blue (4, 2, 1)
+White raspberry lipgloss (4, 2, 1)
+Green apple lipgloss (4, 2, 1)
+Grape Jelly lipgloss (4, 2, 1)
+Strawcheese cake lipgloss (4, 2, 1)
+Cloudy cake lipgloss (4, 2, 1)
+**/
+
+CREATE TABLE Cosmetic_store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
+
+INSERT INTO Cosmetic_store VALUES (1, "Pink lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (2, "Red lipgloss", 4, 2, 2);
+INSERT INTO Cosmetic_store VALUES (3, "Clear lipgloss", 10, 4, 4);
+INSERT INTO Cosmetic_store VALUES (4, "Black lipgloss", 2, 2, 2);
+INSERT INTO Cosmetic_store VALUES (5, "Strawberry lipgloss", 2, 5, 1);
+INSERT INTO Cosmetic_store VALUES (6, "Pina colada lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (7, "Coffee lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (8, "Sweet breeze lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (9, "Strawberry glaze lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (10, "Coco lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (11, "Icy lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (12, "White raspberry lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (13, "Green apple lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (14, "Grape Jelly lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (15, "Strawcheese cake lipgloss", 4, 2, 1);
+INSERT INTO Cosmetic_store VALUES (16, "Cloudy cake lipgloss", 4, 2, 1);
+SELECT * FROM Cosmetic_store ORDER BY price;
+SELECT  id, SUM (quantity) FROM Cosmetic_store
